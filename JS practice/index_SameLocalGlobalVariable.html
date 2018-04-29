@@ -1,0 +1,17 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Same Local Global Variable</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=width-device, initial-scale=1">
+            <script type="text/javascript">
+                var greeting="This is from Global";
+                helloWorld();
+                function helloWorld(){
+                    document.write(greeting);
+                    var greeting="This is from Local Variable";
+                }
+                
+            </script>
+        </head>
+    </html>

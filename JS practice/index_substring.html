@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Substring Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            function getEmailandDomainPart(){
+                var emailAddress = document.getElementById("emailAdd").value;
+                var emailPart = emailAddress.substring(0,emailAddress.indexof("@"));
+                var domainPart = emailAddress.substring(emailAddress.indexof("@")+1);
+                document.getElementById("txtemailPart").value = emailPart;
+                document.getElementById("txtdomainPart").value = domainPart;
+            }
+        </script>
+    </head>
+<body>
+    <form class="form-vertical">
+        <table class="table">
+            <tr class="default">
+                <td>Email Address:</td>
+                <td><input class="form-control" id="emailAdd" placeholder="Enter Email"></td>
+            </tr>
+            <tr class="default">
+                <td>Email Part:</td>
+                <td><input class="form-control" id="txtemailPart" placeholder="Email Part"></td>
+            </tr>
+            <tr class="default">
+                <td>Domain Part:</td>
+                <td><input class="form-control" id="txtdomainPart" placeholder="Domain Part"></td>
+            </tr>
+            <tr class="default">
+                <td></td>
+                <td><input type="button" class="btn btn-default" value="Get Email & Domain Parts" onclick="getEmailandDomainPart()"></td>
+            </tr>
+
+        </table>
+    </form>
+
+</body> 
+</html>       

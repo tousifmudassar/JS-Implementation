@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window_Onerror</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <script type="text/javascript">
+            // window.onerror=function(msg,url,line){
+            //     alert("Message : "+msg+"\nURL : "+url+"\nLine : "+line);
+            //     return ture;
+            // }
+            // NonExistingFunction();
+            // window.onerror=function(ms,url,line){
+            //     alert("Message : "+msg+"\nURL : "+url+"\nLine : "+line);
+            //     return true;
+            // }
+            // try{
+            //     NonExistingFunction();
+            // }
+            // catch(e){
+            //     document.write("Message : "+e.message);
+            // }
+                function ImageErrorHandler(){
+                    alert("There is problem loading the image");
+                }
+
+            
+        </script>
+    </head>
+    <body>
+        <img src="NonExistingImage.jpg" onerror="ImageErrorHandler();">
+    </body>
+</html>

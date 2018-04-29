@@ -1,0 +1,6 @@
+.EventstyleClass{
+    display:table-cell;
+    border:5px solid grey;
+    padding:20px;
+    text-align: center;
+}

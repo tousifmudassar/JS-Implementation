@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ImageGalleryThumbNails</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index_ImageGalleryThumbNails.css">
+    </head>
+    <body>
+        <img src="images/1.jpg" width="540px" height="540px" id="imgMain" style="border:3px solid grey;">
+        <br/>
+        <div id="myDiv" onclick="changeImageOnClick(event)">
+        <img src="images/1.jpg" class="imgStyle">
+        <img src="images/2.jpg" class="imgStyle">
+        <img src="images/3.jpg" class="imgStyle">
+        <img src="images/4.jpg" class="imgStyle">
+        <img src="images/5.jpg" class="imgStyle">
+        <img src="images/6.jpg" class="imgStyle">
+        <img src="images/7.jpg" class="imgStyle">
+        </div>
+        <script type="text/javascript">
+        var images=document.getElementById("myDiv").document.getElementByTagName("img");
+            for(i=0; i<images.length; i++)
+            {
+                images[i].onmouseover=function(){
+                    this.style.cursor='hand';
+                    this.style.borderColor='green';
+                }
+                images[i].onmouseout=function(){
+                    this.style.cursor='pointer';
+                    this.style.borderColor='grey';
+                }
+            }
+        function changeImageOnClick(event){
+            
+            event = event||window.event;
+            var targetElement=event.target||event.srcElement;
+            if(targetElement.tagName=="IMG"){
+                document.getElementById('imgMain').src=targetElement.getAttribute("src");
+            }
+
+        }
+        </script>
+    </body>
+</html>

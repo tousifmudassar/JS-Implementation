@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function Argument</title>
+    </head>
+    <script type="text/javascript">
+        // function printArguments(){
+        //     document.write("Argument Count = "+arguments.length+"<br/>");
+        //     for(i=0; i<arguments.length; i++)
+        //     {
+        //         document.write("Argument is "+i+" = "+arguments[i]+"<br/>");
+        //     }
+        //     document.write("<br/>");
+        // }
+        // printArguments();
+        // printArguments(10,20,30);
+        // printArguments("a",10,"w","duscu",89);
+        // function printArray(){
+        //     var argArray=[].slice.call(arguments);
+        //     argArray.sort();
+        //     document.write(argArray);
+        // }
+        // printArray(13,7,20);
+        // function myFunc(theobject){
+        //     theobject.make="Toyota";
+        // }
+        // var myCar={
+        //     make:"Honda",
+        //     model:"Accord",
+        //     year:"1998"
+        // };
+        // var x,y;
+        // x=myCar.make;
+        // document.write(x+"<br/>");
+        // myFunc(myCar);
+        // y=myCar.make;
+        // document.write(y);
+        // function map(Func,array){
+        //     var result=[];
+            
+        //     for(i=0; i<array.length; i++){
+        //         result[i]=Func(array[i]);
+        //         }
+        //         return result;
+        // }
+        // var Function=function(x){
+        //     return x*x*x;
+        // };
+        // var numbers=[0,1,2,3,4,5];
+        // document.write(map(Function,numbers));
+        function Func(i){
+            if(i<0){
+                return;
+            }
+            document.write("Begin : "+i+"<br/>");
+            Func(i-1);
+            document.write("End : "+i+"<br/>");
+        }
+        Func(3);
+    </script>
+    <body>
+        
+    </body>
+</html>

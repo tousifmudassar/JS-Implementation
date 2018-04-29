@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recursion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <script type="text/javascript">
+            var add = (function () {
+            var counter = 0;
+            return function () {return counter += 1;}
+            })();
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML = add();
+        }
+
+        </script>
+    </head>
+    <body>
+        <p id="demo">0</p>
+        <button type="button" onclick="myFunction()">Count!</button>
+    </body>
+</html>

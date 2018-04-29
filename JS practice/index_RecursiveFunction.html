@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recursion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <script type="text/javascript">
+        // function factorial(n){
+        //     if(n==0 || n==1){
+        //         return 1;
+        //     }
+        //     var result=n;
+        //     while(n>1){
+        //         result=result*(n-1);
+        //         n=n-1;
+        //     }
+        //     return result;
+        // } 
+        // document.write(factorial(6));
+        // recursive Fuction
+        function factorial(n){
+            if(n==0 || n==1){
+                return 1;
+            }
+            return n*factorial(n-1);
+        }
+        document.write(factorial(6));
+        </script>
+    </head>
+</html>
+    

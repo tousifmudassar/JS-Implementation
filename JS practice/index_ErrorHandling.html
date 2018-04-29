@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ErrorHandling</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <script type="text/javascript">
+        // try
+        // {
+        //     document.write("Hello <br/>");
+        //     document.write("This line will not be Executed<br/>");
+        //     document.write("Mudassar Tousif<br/><br/>")
+        // }
+        // catch(a){
+        //     document.write("Message = "+a.message+"<br/>");
+        //     document.write("Description = "+a.description+"<br/>");
+        //     document.write("Stack trace = "+a.stack+"<br/>");
+        // }
+        // finally{
+        //     document.write("This line will be guaranteed Executed<br/><br/>");
+        //     document.write("Mudassar tousif");
+        // }
+        function divide(){
+            var numerator= Number(prompt("Enter Numerator"));
+            var denominator= Number(prompt("Enter Denominator"));
+        
+        try{
+            if(denominator == 0){
+                throw{
+                    error:"Denominator is Zero",
+                message:"Divide can't be Possible"
+                }
+                
+            }
+            else{
+               document.write("Result = "+ (numerator/denominator));
+            }
+        }
+        catch(a){
+            document.write("Error: "+a.error+"<br/>");
+            document.write("Message: "+a.message+"<br/>");
+        }
+        }
+        divide();
+        </script>
+    </head>
+</html>

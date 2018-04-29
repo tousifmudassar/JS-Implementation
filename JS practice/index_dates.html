@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <script type="text/javascript">
+            // document.write(new Date());
+            // var dateOfBirth=new Date("December 15,1994 11:20:00");
+            // document.write(dateOfBirth);
+            // var dateOfBirth=new Date(1994,11,15,12,50,0,0);
+            // document.write(dateOfBirth);
+            // function getMonthNamefromNumber(MonthNumber){
+            //     var monthNames=["January","February","March","April","May","June","July","August","September","October","November","December"];
+            //     return monthNames[MonthNumber];
+            // }
+            // var MonthName=getMonthNamefromNumber(new Date(1981,2,13,19,55,0,0).getMonth());
+            // document.write(MonthName);
+            // var DateOfBirth=new Date("March 15,1998 12:20:00").getMonth();
+            // document.write(DateOfBirth); 
+            function getweekNameFromNumber(daynumber){
+                var WeekNames=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                return WeekNames[daynumber];
+            }
+            var weekName=getweekNameFromNumber(new Date(1999,10,4,12,20,0,0).getDay());
+            document.write(weekName);
+            // var dateOfBirth=new Date("February 14,2018 18:45:0:0");
+            // document.write(formateDate(dateOfBirth));
+            // function formateDate(date){
+            //     var year=date.getFullYear();
+            //     var month=date.getMonth()+1;
+            //     if(month<10){
+            //         month="0"+month;
+            //     }
+            //     var day=date.getDate();
+            //     if(day<10){
+            //         day="0"+day;
+            //     }
+            //     return day+"/"+month+"/"+year;
+            // } 
+        </script>
+    </head>
+</html>

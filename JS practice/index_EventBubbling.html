@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event_Bubbling</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index_EventBubbling.css">
+    </head>
+    <body>
+        <!-- <div class="EventstyleClass" onclick="alert('DIV Clicked')">DIV Element
+            <span class="EventstyleClass" onclick="alert('SPAN Clicked')">SPAN Element
+                <input type="button" value="Click Me" onclick="alert('BUTTON Clicked')"/>
+            </span>
+        </div> -->
+        <div class="EventstyleClass" id="DIV 1">DIV 1
+            <div class="EventstyleClass" id="DIV 2">DIV 2
+                <div class="EventstyleClass" id="DIV 3">DIV 3
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var divElements=document.getElementsByTagName('div');
+            for(i=0;i<divElements.length;i++){
+                divElements[i].onclick=function(){
+                    event=event||window.event;
+                    if(event.stopPropagation){
+                        event.stopPropagation();
+                    }
+                    else{
+                        event.cancelBubble=true;
+                    }
+                    this.style.borderColor='red';
+                    alert(this.getAttribute('id')+" Border Color Changed");
+                }
+            }
+        </script>
+    </body>
+</html>

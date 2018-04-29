@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ImageSlidesShow</title>
+    </head>
+    <body>
+        <img src="/images/1.jpg" id="image" style="width:200px; height:200px;"><br/>
+        <input type="button" value="Start Slides" onclick="startslidesShow()">
+        <input type="button" value="Stop Slides" onclick="stopslidesShow()">
+        <script type="text/javascript">
+        var intervalId;
+        function startslidesShow() {
+            intervalId=setInterval(ChangeImage,3000);
+        }
+        function stopslidesShow(){
+            clearInterval(intervalId);
+        }
+        function ChangeImage(){
+            var imagesrc=document.getElementById("image").getAttribute("src");
+           var currentImageNumber=imagesrc.substring(imagesrc.lastIndexOf("/")+1,imagesrc.lastIndexOf("/")+2);
+           if(currentImageNumber==11){
+            currentImageNumber=1;
+           }
+           document.getElementById("image").setAttribute("src","/images/"+(Number(currentImageNumber)+1)+".jpg");
+        }
+          
+        </script>
+    </body>
+</html>

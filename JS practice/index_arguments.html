@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Argument</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <script type="text/javascript">
+        function printArgument(){
+            document.write("Count Numbers : "+ arguments.length+"</br>");
+            for(i=0; i<arguments.length; i++){
+                document.write("The argument "+i+" = "+arguments[i]+"</br>");
+                sum=0;
+                
+            }
+            for(j=0; j<arguments.length; j++){
+                    sum=sum+arguments[j];
+                    document.write("The Total Count: "+ sum +"</br>");
+                }
+            document.write("</br>")
+        }
+        printArgument();
+        printArgument("A","B");
+        printArgument(10,20,30);
+
+        </script>
+    </head>
+</html>

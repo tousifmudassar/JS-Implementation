@@ -1,0 +1,13 @@
+{
+    "name":"vscode-ts-01",
+    "version":"1.0.0",
+    "description":"",
+    "main":"./src/app.js",
+    "script":{
+        "test":"echo \"Error:no test specified\" && exit1"
+    },
+    "keyword":[],
+    "author":"",
+    "license": "ISC",
+    "dependencies":{"vscode-ts-01":"^1.0.0"}
+}

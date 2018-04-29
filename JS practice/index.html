@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Add</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="8-callback.js"></script> -->
+        <script type="text/javascript">
+            function addNumber(){
+                var firstNumber=document.getElementById("firstNumber").value;
+                if(firstNumber==""){
+                    alert("First Number is required");
+                    return;
+                }
+                firstNumber=parseFloat(firstNumber);
+                if(isNaN(firstNumber)){
+                    alert("Enter the valid number in first number textbox");
+                    return;
+                }
+               var secondNumber=document.getElementById("secondNumber").value;
+               if(secondNumber==""){
+                   alert("Second Number is required");
+                   return;
+               }
+               secondNumber=parseFloat(secondNumber);
+               if(isNaN(secondNumber)){
+                   alert("Enter the valid number in second number textbox");
+                   return;
+               }
+                document.getElementById("result").value=firstNumber+secondNumber;
+            }
+            </script> 
+    </head>
+<body>
+    <form class="form-vertical">
+        <table class="table">
+            <tr class="default">
+                <td>First Number:</td>
+                <td><input class="form-control" id="firstNumber" name="firstNumber" placeholder="Enter First Number"></td>
+                
+            </tr>
+            <tr class="default">
+                <td>Second Number:</td>
+                <td><input class="form-control" id="secondNumber" name="secondNumber" placeholder="Enter Second Number"></td>
+            </tr>
+            <tr class="default">
+                <td>Result:</td>
+                <td><input class="form-control" id="result" name="result" placeholder="Result"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="add" id="btnAdd" onclick="addNumber()"/></td>
+            </tr>
+        </table>
+    </form>
+     
+</body>  
+
+</html>

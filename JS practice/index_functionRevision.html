@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function Revision</title>
+    </head>
+    <body>
+        <!-- <input type="button" value="Click Me" id="clickbtn" onclick="alert(increamentClickCount);"> -->
+        <script type="text/javascript">
+            // function addNumber(firstNumber,secondNumber){
+            //     return firstNumber+secondNumber;
+            // }
+            // document.write(addNumber(10,20));
+            // var add=function(firstNumber,secondNumber){
+            //     return firstNumber+secondNumber;
+            // };
+            // document.write(add(20,30));
+                // var factorial=function computeFac(Num){
+                //     if(Num==1||Num==0){
+                //         return 1;
+                //     }
+                //     else{
+                //         return Num*computeFac(Num-1);
+                //     }
+                // };
+                // document.write(factorial(6));
+            //    var result= (function computeFac(Num){
+            //         if(Num==1||Num==0){
+            //             return 1;
+            //         }
+            //         return Num*computeFac(Num-1);
+            //     }(5));
+                // document.write(result);
+            // function greet(){
+            //     greeting="Hello World";
+            //     document.write(greeting);
+            // }
+            // document.write(greeting);
+            // document.write(greeting);
+            // var greeting="This is from global Variable";
+            // function hellowrold(){
+            //     var greeting="This is from local Variable";
+            //     greeting+="???";
+            //     document.write(greeting);
+            // }
+            // hellowrold();
+            // greeting+="!!!";
+            // document.write(greeting);
+        //    document.write((function addNumber(firstNumber,secondNumber){
+        //         var value="The Result is :";
+        //         function add(){
+        //             return value+(firstNumber+secondNumber);
+        //         }
+        //         return add();
+        //     }(20,30)));
+            // function addNumber(firstNumber,secondNumber){
+            //     var result="The value is :";
+            //     function add(){
+            //         return result + (firstNumber+secondNumber);
+            //     }
+            //     return add;
+            // }
+            // document.write(addNumber(20,30)());
+            // var clickcount=0;
+            // var increamentClickCount=(function (){
+            //     var clickcount=0;
+            //     return function (){
+            //          return ++clickcount;
+            //     }
+            // })();
+            function printArguments(){
+                document.write("Argument Count ="+arguments.length+"<br/>");
+                for(i=0; i<arguments.length; i++){
+                    document.write("Argument no "+i+"="+"arguments[i]"+"<br/>");
+                }
+                document.write("<br/>");
+            }
+            
+            printArguments(a,b);
+            printArguments(10,20,30);
+            
+            
+        </script>
+    </body>
+</html>

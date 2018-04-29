@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timing_Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+    
+    </head>
+    <body>
+        <div id="TimeDiv"></div><br/>
+        <input type="button" value="Start Clock" onclick="startclock()">
+        <input type="button" value="Stop Clock" onclick="stopclock()">
+        <script type="text/javascript">
+            // document.getElementById("TimeDiv").innerHTML=new Date(); //Date constructor
+            document.getElementById("TimeDiv").innerHTML=new Date();
+            var intervalID;
+            function startclock(){
+                intervalID=setInterval(getCurrentDateTime,1000);
+            }
+            function stopclock(){
+                clearInterval(intervalID);
+            }
+            
+            function getCurrentDateTime(){
+                document.getElementById("TimeDiv").innerHTML=new Date();
+            } 
+
+        </script>
+    </body>
+</html>

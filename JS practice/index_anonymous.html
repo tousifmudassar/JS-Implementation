@@ -1,0 +1,47 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Anonymousfunction</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=width-device, initial-scale=1">
+            <script type="text/javascript">
+                var add= function(firstNumber,secondNumber){
+                    return firstNumber+secondNumber;
+                }
+                var result=add(10,20);
+                document.write(result);
+                document.write("</br>");
+                document.write("&emsp;");
+                document.write("</br>");
+                document.write("</br>");
+                // Named Function Expression
+
+                var factorial=function computeFactorial(number){
+                    if(number<=1){
+                        return 1;
+                    }
+                    return number*computeFactorial(number-1);
+                }
+                var result=factorial(5);
+                document.write(result);
+
+                document.write("</br>");
+                document.write("&emsp;");
+                document.write("</br>");
+                document.write("</br>");
+
+                // selfinvoking function Expression(Immediately invoked function expression)
+
+                var result=(function computeFactorial(number){
+                    if(number<=1){
+                        return 1;
+                    }
+                    return number*computeFactorial(number-1);
+                }(6));
+                document.write(result);
+            </script>
+        </head>
+        <body>
+
+        </body>
+    </html>

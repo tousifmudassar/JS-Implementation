@@ -1,0 +1,20 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>ClosureExample</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <script type="text/javascript">
+       var onClickIncrement= (function (){
+            var clickcount=0;
+            return function (){
+                return clickCount= ++clickcount;
+            }
+        })();
+    document.write(clickCount);
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Click Me" onclick="alert(onClickIncrement());">
+    </body>
+</html>

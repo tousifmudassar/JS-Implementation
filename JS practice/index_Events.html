@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width=width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- <input type="button" value="Click Me" onmouseover="this.style.background='red'; this.style.color='white'"; -->
+            <!-- onmouseout="this.style.background='gray'; this.style.color='white'";> -->
+
+        <!-- <input type="button" value="Click Me" id="btn" onmouseover="changeColorOnmouseOver()" onmouseout="changeColorOnmouseOut()"> -->
+        <!-- <input type="submit" id="btn" value="Submit" onclick="return confirmOnsubmit()" > -->
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" id="txtfirstname" onkeyup="validateRequiredField('txtfirstname')" onblur="validateRequiredField('txtfirstname')"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" id="txtlastname" onkeyup="validateRequiredField('txtlastname')" onblur="validateRequiredField('txtlastname')"></td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+                
+            // function changeColorOnmouseOver(){
+            //     var controlId=document.getElementById("btn");
+            //     controlId.style.background='green';
+            //     controlId.style.color='white';
+            // }
+            // function changeColorOnmouseOut(){
+            //     var controlId=document.getElementById("btn");
+            //     controlId.style.background='gray';
+            //     controlId.style.color='white';
+            // }
+
+            // function confirmOnsubmit(){
+            //     if(confirm("Are you Sure to Submit")){
+            //         alert("you selected ok, submitted successfully!");
+            //         return true;
+            //     }
+            //     else{
+            //         alert("You selected cancel")
+            //         return false;
+            //     }
+            // }
+                // function validateRequiredField(controlId){
+                //    var control= document.getElementById(controlId);
+                //    control.style.color='white';
+                //    if(control.value==""){
+                //        control.style.background='red';
+                //    }
+                //    else{
+                //        control.style.background='green';
+                //    }
+                // } 
+        </script>
+    </body>
+</html>

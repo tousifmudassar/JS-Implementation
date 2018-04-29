@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpecialEventsMethods</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device,initial-scale=1.0">
+    </head>
+    <body>
+        <input type="button" value="Click Me" id="btn">
+        <!-- <input type="button" value="Remove Events Handlers" onclick="removeEventshandlers()"> -->
+        <script type="text/javascript">
+            // btn.addEventListener("mouseover",changeColoronmouseover);
+            // btn.addEventListener("mouseout",changeColoronmouseout);
+            // function changeColoronmouseover(){
+            //     this.style.background='red';
+            //     this.style.color='black';
+            // }
+            // function changeColoronmouseout(){
+            //     this.style.background='gray';
+            //     this.style.color='black';
+            // }
+            // function removeEventshandlers(){
+            //     btn.removeEventListener("mouseover",changeColoronmouseover);
+            //     btn.removeEventListener("mouseout",changeColoronmouseout);
+            // }
+            btn.addEventListener("click",handler1);
+            btn.addEventListener("click",handler2);
+            function handler1(){
+                alert("Handler1 called");
+            }
+            function handler2(){
+                alert("Handler2 called");
+            }
+        </script>
+    </body>
+</html>
